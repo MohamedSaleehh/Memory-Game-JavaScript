@@ -1,0 +1,170 @@
+body {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.test {
+  background-color: white;
+}
+
+.flex-grid {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.front {
+  position: absolute;
+  width: 39.5%;
+  margin-left: 5%;
+}
+
+.back {
+  position: absolute;
+  width: 39.5%;
+  margin-left: 5%;
+
+}
+@media only screen and (max-width: 500px) {
+  .bbtn{
+    margin-left: 30px;
+  }
+  .mbtn{
+    height: 30px;
+    font-size: small;
+  }
+  .front {
+    position: absolute;
+    width: 39.5%;
+    margin-left: 1%;
+
+  }
+  
+  .back {
+    position: absolute;
+    width: 39.5%;
+    margin-left: 1%;
+
+  
+  }
+}
+.imgwid {
+  width: 19%;
+  margin: 5px;
+}
+
+.imgwidBlack {
+  width: 19%;
+  margin: 5px;
+  z-index: 1;
+}
+
+.flip,
+.success {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.2s linear;
+}
+
+.stop {
+  pointer-events: none;
+}
+
+.stopbtn {
+  pointer-events: none;
+}
+
+.containers {
+  align-items: center;
+  margin: auto;
+  width: 35%;
+  padding-bottom: 620px;
+  padding-left: 24px;
+  padding-right: 1px;
+}
+
+.shakeimg {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.mybutton {
+  background-color: #5f84c9;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 80%;
+  width: 40%
+}
+
+.restart {
+  background-color: #5f84c9;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 80%;
+  width: 40%
+}
+
+.divbutton {
+  position: absolute;
+}

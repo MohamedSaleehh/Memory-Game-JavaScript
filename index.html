@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+    <div class="divbutton d-flex justify-content-around mb-5 bbtn">
+        <button id="btn" class="btn mbtn btn-secondary m-1" onclick="hint()"> Hint: 5 </button>
+        <button class="mbtn btn btn-danger m-1" onClick="window.location.reload();">Restart</button>
+    </div>
+    <section class="containers mt-5">
+        <div class="d-flex justify-content-center" id="container">
+            <div class="front" id="imgs">
+            </div>
+            <div class="back" id="imgblack">
+            </div>
+
+        </div>
+    </section>
+</div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
